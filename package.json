@@ -1,7 +1,7 @@
 {
   "name": "lessif",
-  "version": "0.0.1",
-  "description": "Answers from combination conditions",
+  "version": "0.0.2",
+  "description": "Write more conditions with less if.",
   "main": "./dist/lessif.umd.js",
   "module": "./dist/lessif.es.js",
   "types": "./dist/src/lessif.d.ts",

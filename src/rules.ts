@@ -13,13 +13,13 @@ export function rules2Predicates<T>(rules: TIfRule<T>[]): TPredicate<T>[] {
         switch (ruleType) {
             case 'function':
                 return n as TPredicate<T>;
-            case 'boolean':
-                return function () {
-                    return !!n;
-                };
             case 'object':
                 return function (payload: T) {
                     return Object.keys(n).every(key => (n as object)[key] === (payload as any as object)[key]);
+                };
+            case 'boolean':
+                return function () {
+                    return !!n;
                 };
         }
 

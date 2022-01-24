@@ -4,11 +4,13 @@ import { and, none, or } from './lessif';
 interface IPerson {
     name: string;
     age: number;
+    sex: 1 | 0;
 }
 
 const person: IPerson = {
     name: 'tom',
-    age: 12
+    age: 12,
+    sex: 1
 };
 
 test('and', () => {
@@ -44,6 +46,9 @@ test('and', () => {
             { name: 'tom1' }
         )(person)
     ).false;
+
+    expect(and<boolean>(true, true, true)(true)).true;
+    expect(and<boolean>(true, true, false)(true)).false;
 });
 
 test('or', () => {
@@ -72,6 +77,9 @@ test('or', () => {
         }
     );
     expect(predicate2(person)).false;
+
+    expect(or<boolean>(false, false, false)(true)).false;
+    expect(or<boolean>(true, true, false)(true)).true;
 });
 
 test('none', () => {
@@ -89,4 +97,7 @@ test('none', () => {
     );
 
     expect(predicate(person)).true;
+
+    expect(none<boolean>(true, true, false)(true)).false;
+    expect(none<boolean>(false, false, false)(true)).true;
 });

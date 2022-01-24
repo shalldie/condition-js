@@ -16,7 +16,7 @@ Write more conditions with less if. 少许代码实现大量判断。
 
 ### and
 
-Whether all provided rules pass.
+是否所有规则都通过。
 
 ```ts
 and<boolean>(true, true, true)(true); // true
@@ -60,7 +60,7 @@ predicate(person); // true
 
 ### or
 
-Whether at least one provided rule passes.
+是否至少有一个规则通过。
 
 ```ts
 or<boolean>(true, false, false)(true); // true
@@ -97,7 +97,7 @@ predicate(person); // true
 
 ### none
 
-Whether none of provided rules pass.
+是否所有规则都不通过。
 
 ```ts
 none<boolean>(false, false, false)(true); // true
@@ -134,7 +134,7 @@ predicate(person); // false
 
 ### and&or&none
 
-Put them together!
+这些规则可以放在一起用。
 
 ```ts
 interface IPerson {
