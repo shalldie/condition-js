@@ -1,0 +1,48 @@
+{
+  "name": "condition-js",
+  "version": "0.0.1",
+  "description": "Answers from combination conditions",
+  "main": "./dist/condition-js.umd.js",
+  "module": "./dist/condition-js.es.js",
+  "types": "./dist/src/condition-js.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/condition-js.es.js",
+      "require": "./dist/condition-js.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint --ext .js,.ts src",
+    "test": "vitest --run",
+    "build": "tsc && vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shalldie/condition-js.git"
+  },
+  "keywords": [
+    "condition",
+    "javascript"
+  ],
+  "author": "shalldie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shalldie/condition-js/issues"
+  },
+  "homepage": "https://github.com/shalldie/condition-js#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5",
+    "vite": "^2.7.2",
+    "vite-plugin-dts": "^0.9.9",
+    "vitest": "^0.1.26"
+  }
+}
