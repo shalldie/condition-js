@@ -1,19 +1,22 @@
 {
-  "name": "condition-js",
+  "name": "lessif",
   "version": "0.0.1",
   "description": "Answers from combination conditions",
-  "main": "./dist/condition-js.umd.js",
-  "module": "./dist/condition-js.es.js",
-  "types": "./dist/src/condition-js.d.ts",
+  "main": "./dist/lessif.umd.js",
+  "module": "./dist/lessif.es.js",
+  "types": "./dist/src/lessif.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/condition-js.es.js",
-      "require": "./dist/condition-js.umd.js"
+      "import": "./dist/lessif.es.js",
+      "require": "./dist/lessif.umd.js"
     }
   },
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "lint": "eslint --ext .js,.ts src",
     "test": "vitest --run",
@@ -21,18 +24,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shalldie/condition-js.git"
+    "url": "git+https://github.com/shalldie/lessif.git"
   },
   "keywords": [
+    "if",
     "condition",
     "javascript"
   ],
   "author": "shalldie",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shalldie/condition-js/issues"
+    "url": "https://github.com/shalldie/lessif/issues"
   },
-  "homepage": "https://github.com/shalldie/condition-js#readme",
+  "homepage": "https://github.com/shalldie/lessif#readme",
   "devDependencies": {
     "@types/node": "^17.0.10",
     "@typescript-eslint/eslint-plugin": "^5.10.0",

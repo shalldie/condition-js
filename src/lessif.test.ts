@@ -1,5 +1,5 @@
 import { test, expect } from 'vitest';
-import { and, none, or } from './condition-js';
+import { and, none, or } from './lessif';
 
 interface IPerson {
     name: string;

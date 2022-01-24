@@ -1,17 +1,16 @@
-# condition-js
+# lessif
 
 Answers from combination conditions
 
-[![npm][condition-js-icon]][condition-js-npm]
-[![npm][condition-js-bundle]][condition-js-npm]
-[![Build Status](https://img.shields.io/github/workflow/status/shalldie/condition-js/ci?label=build&logo=github&style=flat-square)](https://github.com/shalldie/condition-js/actions)
-[![License](https://img.shields.io/npm/l/condition-js?logo=github&style=flat-square)](https://github.com/shalldie/condition-js)
+[![npm][lessif-icon]][lessif-npm]
+[![test status](https://img.shields.io/github/workflow/status/shalldie/lessif/ci?label=test&logo=github&style=flat-square)](https://github.com/shalldie/lessif/actions)
+[![license](https://img.shields.io/npm/l/lessif?logo=github&style=flat-square)](https://github.com/shalldie/lessif)
 
 [English](./README.md) | [中文](./README.zh-CN.md)
 
 ## Installation
 
-    npm install condition-js --save
+    npm install lessif --save
 
 ## Usage & Example
 
@@ -19,8 +18,7 @@ Answers from combination conditions
 
 MIT
 
-<!-- condition-js -->
+<!-- lessif -->
 
-[condition-js-icon]: https://img.shields.io/npm/v/condition-js.svg?logo=npm&style=flat-square
-[condition-js-npm]: https://www.npmjs.com/package/condition-js
-[condition-js-bundle]: https://img.shields.io/bundlephobia/minzip/condition-js?logo=npm&style=flat-square
+[lessif-icon]: https://img.shields.io/npm/v/lessif.svg?logo=npm&style=flat-square
+[lessif-npm]: https://www.npmjs.com/package/lessif

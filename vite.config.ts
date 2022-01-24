@@ -8,9 +8,9 @@ export default defineConfig({
 
     build: {
         lib: {
-            entry: path.join(__dirname, 'src/condition-js.ts'),
-            name: 'ConditionJS',
-            fileName: format => `condition-js.${format}.js`
+            entry: path.join(__dirname, 'src/lessif.ts'),
+            name: 'Lessif',
+            fileName: format => `lessif.${format}.js`
         }
     },
 

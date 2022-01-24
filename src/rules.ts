@@ -1,12 +1,12 @@
 export type TPredicate<T> = (payload: T) => boolean;
 
-export type TConditionRule<T> =
+export type TIfRule<T> =
     | TPredicate<T>
     //
     | Partial<T>
     | boolean;
 
-export function rules2Predicates<T>(rules: TConditionRule<T>[]): TPredicate<T>[] {
+export function rules2Predicates<T>(rules: TIfRule<T>[]): TPredicate<T>[] {
     return rules.map(n => {
         const ruleType = typeof n;
 
