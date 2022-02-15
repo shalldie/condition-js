@@ -1,6 +1,6 @@
 # lessif
 
-Write more conditions with less if. 少许代码实现大量判断。
+Conbination condition with less if. 用更少的代码实现组合判断。
 
 [![npm][lessif-icon]][lessif-npm]
 [![test status](https://img.shields.io/github/workflow/status/shalldie/lessif/ci?label=test&logo=github&style=flat-square)](https://github.com/shalldie/lessif/actions)

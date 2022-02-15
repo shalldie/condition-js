@@ -1,7 +1,7 @@
 {
   "name": "lessif",
   "version": "0.0.2",
-  "description": "Write more conditions with less if.",
+  "description": "Conbination condition with less if. 用更少的代码实现组合判断。",
   "main": "./dist/lessif.umd.js",
   "module": "./dist/lessif.es.js",
   "types": "./dist/src/lessif.d.ts",
